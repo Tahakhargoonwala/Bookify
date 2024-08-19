@@ -1,0 +1,42 @@
+<% layout("layouts/boilerplate")%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h2>Update the details you want</h2><br>
+            <form method="post" action="/listings/<%= x.id %>/update?_method=patch" >
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input name="listing[title]" type="text" value="<%= x.title %>" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" class="form-control" required><%= x.description %></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label" >Image URL</label>
+                    <input name="listing[image]" type="text" value="<%= x.image %>" class="form-control" required>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4" >
+                        <label for="price" class="form-label">Price</label>
+                        <input name="listing[price]" type="number" value="<%= x.price %>" class="form-control" required>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country</label>
+                        <input name="listing[country]" type="text" value="<%= x.country %>" class="form-control" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input name="listing[location]" type="text" value="<%= x.location %>" class="form-control" required>
+                </div>
+                <br>
+
+                <button class="btn btn-dark " style="margin-bottom: 2%;" >Edit</button>
+
+            </form>
+        </div>
+    </div>
+    
+   
+</body>

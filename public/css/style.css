@@ -1,0 +1,125 @@
+body{
+    
+    font-family: "Gupter", serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+/* font */
+.gupter-regular {
+    font-family: "Gupter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.gupter-medium {
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.gupter-bold {
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+
+.navbar{
+    height: 5rem;
+    background-color: rgb(32, 48, 48);
+}
+
+.fa-pen-to-square{
+    color: bisque;
+    font-size: 2rem;    
+}
+
+.nav-link{
+    color: rgb(201, 201, 162) !important;
+}
+
+/* footer */
+
+.f-info-links a{
+    text-decoration: none;
+
+}
+
+.f-info-links :hover{
+    text-decoration: underline;
+    
+}
+.f-info-links{
+    width: 100%;
+}
+
+.f-info-socials{
+    width: 100%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.f-info-socials i {
+    margin: 0.5rem;
+}
+
+.f-info{
+    text-align: center;
+    height: 7rem;
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* cards */
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+    margin-left: 3.5%;
+    padding-top: 1%;
+}
+
+.card-img-top{
+    border-radius: 1rem !important; 
+    width: 100%;
+    object-fit: cover !important;     
+}
+
+.card-body{
+    padding: 0%;
+}
+
+.card-text{
+    font-weight: 2rem;
+    font-size: 1.2rem;
+}
+
+.card-img-overlay{
+   opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.3;
+    background-color: white;
+}
+
+.alert{
+    background-color: rgb(32, 48, 48);
+}
+
+#comment{
+    height: 150px;
+    border-width: 5px;
+    border-color: rgb(6, 6, 5);
+    align-items: center;
+    width: 340px;
+    margin: 10px 0px 10px 0px;
+}

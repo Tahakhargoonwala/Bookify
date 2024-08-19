@@ -1,0 +1,45 @@
+<% layout("layouts/boilerplate")%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h3>Create a new listing</h3>
+            <br>
+            <form method="post" action="/listings"   class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input name="listing[title]" type="text" placeholder="Enter your title" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" class="form-control" required></textarea>
+                </div> 
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image Link</label>
+                    <input name="listing[image]" type="text" placeholder="Enter image source/link" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4 ">
+                        <label for="price" class="form-label">price</label>
+                        <input name="listing[price]" type="number" placeholder="Enter your price" class="form-control" required>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country</label>
+                        <input name="listing[country]" type="text" placeholder="Enter your country" class="form-control" required>
+                    </div> 
+                </div>
+                
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input name="listing[location]" type="text" placeholder="Enter your location" class="form-control" required>
+                </div>
+                
+                <br> 
+                <button class="btn btn-dark" style="margin-bottom: 2%;">Submit</button><br>
+            </form>
+        </div>  
+    </div>
+
+    
+
+
+</body>
